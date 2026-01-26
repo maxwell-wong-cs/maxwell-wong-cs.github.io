@@ -5,10 +5,24 @@ html{
 }
 
 .firstimage{
-    max-width: 200%;
-    height: auto;
+    text-align: center;
 }
 
+.firstimage img{
+    width: 1000px;
+    height: auto;
+    border: 4px solid #080F0F;
+    border-radius: 25px;
+}
+
+.title{
+    text-align: center;
+    font-size: x-large;
+}
+
+.line{
+    border-left: 20px solid #a52422
+}
 
 
 
