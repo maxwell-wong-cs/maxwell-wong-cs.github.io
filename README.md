@@ -13,3 +13,5 @@ My personal site.
 - [background-color](https://www.w3schools.com/css/css_background.asp) - website background color
 
 - [div](https://www.w3schools.com/tags/tag_div.asp) - division of images
+
+- [verticle-timeline-codepen](https://codepen.io/abariatti/pen/ZPVbyg) - vertical timeline
