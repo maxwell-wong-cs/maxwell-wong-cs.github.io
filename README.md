@@ -15,3 +15,5 @@ My personal site.
 - [div](https://www.w3schools.com/tags/tag_div.asp) - division of images
 
 - [verticle-timeline-codepen](https://codepen.io/abariatti/pen/ZPVbyg) - vertical timeline
+
+- [verticle-timeline-tutorial](https://www.w3schools.com/howto/howto_css_timeline.asp) - second timeline reference
