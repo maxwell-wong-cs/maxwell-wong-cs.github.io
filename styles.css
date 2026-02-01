@@ -4,6 +4,14 @@ html{
     margin: 0;
 }
 
+h2{
+    color: aliceblue
+}
+
+p{
+    color:aliceblue
+}
+
 .firstimage{
     text-align: center;
 }
@@ -20,38 +28,135 @@ html{
     font-size: x-large;
 }
 
-.timeline-container ul.funny li{
-    list-style: none;
-    margin: auto;
-    min-height: 500px;
-    border-left: 4px solid #a52422;
-    left: 48%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
+*{
+    box-sizing: border-box;
 }
 
-.timeline-container ul.funny li .timeline-icon{
-    left: -20px;
-    top: 30px;
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #ab504f;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 0;
+}
+
+.container{
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.container::after{
+    left: 96.5%;
+    top: 15px;
     position: absolute;
     content: "";
     border: 8px solid #ab504f;
     border-radius: 500%;
     background-color: #860503;
-    height:20px;
-    width:20px;
+    height: 25px;
+    width: 25px;
+    z-index: 1;
 }
 
-ul.funny li .timeline-text{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+.left{
+    left: 0;
 }
 
-ul.funny li .timeline-title{
-    padding: 500px,0,0,0
+.right{
+    left: 50%;
 }
+
+.left::before{
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0px;
+    z-index: 1;
+    right: 30px;
+    border: mediumvioletred;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent red transparent transparent;
+}
+
+.right::before{
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0px;
+    z-index: 1;
+    left: 30px;
+    border: mediumvioletred;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent red transparent transparent;
+}
+
+.right::after{
+    left: -20.5px;
+}
+
+.content{
+    padding:20px 30px;
+    background-color: #ab504f;
+    position: relative;
+    border-radius: 6px;
+}
+
+.content-image{
+    border-radius: 4px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.content-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px){
+    .timeline::after{
+        left:31px;
+    }
+
+    .container::before{
+        left:60px;
+        border: mediumvioletred;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent red transparent transparent;
+    }
+
+    .left::after, .right::after{
+        left: 15px;
+    }
+
+}
+
+    
+
+
+
+
+
+
+
+
+
+
 
 
 
