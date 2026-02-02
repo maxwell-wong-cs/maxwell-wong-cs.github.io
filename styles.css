@@ -1,3 +1,5 @@
+
+
 html{
     font-family: oswald;
     background: #EFF2C0;
@@ -14,6 +16,8 @@ p{
 
 .firstimage{
     text-align: center;
+    animation: fadeIn;
+    animation-duration: 5s;
 }
 
 .firstimage img{
@@ -21,6 +25,9 @@ p{
     height: auto;
     border: 4px solid #080F0F;
     border-radius: 25px;
+    animation: fadeIn;
+    animation-duration: 5s;
+
 }
 
 .title{
