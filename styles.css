@@ -1,5 +1,3 @@
-
-
 html{
     font-family: oswald;
     background: #EFF2C0;
@@ -16,8 +14,6 @@ p{
 
 .firstimage{
     text-align: center;
-    animation: fadeIn;
-    animation-duration: 5s;
 }
 
 .firstimage img{
@@ -25,14 +21,15 @@ p{
     height: auto;
     border: 4px solid #080F0F;
     border-radius: 25px;
-    animation: fadeIn;
-    animation-duration: 5s;
-
+    animation-name: fadeIn;
+    animation-duration: 3s;
 }
 
 .title{
     text-align: center;
     font-size: x-large;
+    animation-name: fadeIn;
+    animation-duration: 5s;
 }
 
 *{
@@ -126,6 +123,7 @@ p{
     border-radius: 4px;
     margin-bottom: 15px;
     overflow: hidden;
+    position: relative;
 }
 
 .content-image img{
@@ -133,7 +131,21 @@ p{
     height: auto;
     display: block;
     width: 100%;
+    position: relative;
+    transition: 0.3s;
+    transform: scale(1);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
+
+
+.content-image:hover img{
+    transform: scale(1.1);
+}
+
+
 
 @media screen and (max-width: 600px){
     .timeline::after{

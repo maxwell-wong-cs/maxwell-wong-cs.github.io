@@ -17,3 +17,6 @@ My personal site.
 - [verticle-timeline-codepen](https://codepen.io/abariatti/pen/ZPVbyg) - vertical timeline
 
 - [verticle-timeline-tutorial](https://www.w3schools.com/howto/howto_css_timeline.asp) - second timeline reference
+
+- [animate-css](https://animate.style/) - css animation library
+
