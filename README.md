@@ -20,3 +20,9 @@ My personal site.
 
 - [animate-css](https://animate.style/) - css animation library
 
+- [z-index](https://www.w3schools.com/cssref/pr_pos_z-index.php) - z-index tutorial for ordering elements on top of eachother 
+
+- [position](https://www.w3schools.com/css/css_positioning.asp) - position tutorial as we prerequisite for utilising z-index
+
+- [box-sizing](https://www.w3schools.com/css/css3_box-sizing.asp) - contains all elements into a single width, applied to all elements
+

@@ -1,21 +1,26 @@
+/*contains the font family for the whole site and creates the background of the site*/
 html{
     font-family: oswald;
     background: #EFF2C0;
     margin: 0;
 }
 
+/*contains the font size for containers*/
 h2{
     color: aliceblue
 }
 
+/*contains the font size for containers*/
 p{
     color:aliceblue
 }
 
+/*aligns the first image into the center of the page*/
 .firstimage{
     text-align: center;
 }
 
+/*creates the animation for the first image to fade in and also creates the rounded edges and border color*/
 .firstimage img{
     width: 1000px;
     height: auto;
@@ -25,6 +30,7 @@ p{
     animation-duration: 3s;
 }
 
+/*creates font size for the title and also sets the animation*/
 .title{
     text-align: center;
     font-size: x-large;
@@ -32,16 +38,19 @@ p{
     animation-duration: 5s;
 }
 
+/*creates universal width of all elements with border box*/
 *{
     box-sizing: border-box;
 }
 
+/*creates dimensions for the timeline*/
 .timeline{
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/*inserts timeline with the height based off of the amount of containers, hence the ::after*/
 .timeline::after{
     content: '';
     position: absolute;
@@ -54,6 +63,7 @@ p{
     z-index: 0;
 }
 
+/*creates dimensions for the containers*/
 .container{
     padding: 10px 40px;
     position: relative;
@@ -61,6 +71,7 @@ p{
     width: 50%;
 }
 
+/*creates containers including images and text based on the content size and required container space*/
 .container::after{
     left: 96.5%;
     top: 15px;
@@ -74,14 +85,17 @@ p{
     z-index: 1;
 }
 
+/*sends the left containers and icons to the left side of the site*/
 .left{
     left: 0;
 }
 
+/*sends the right containers and icons to the right side of the site*/
 .right{
     left: 50%;
 }
 
+/*ensures correct positioning of left containers and icons, also that they are layered on top.*/
 .left::before{
     content: "";
     height: 0;
@@ -90,11 +104,9 @@ p{
     width: 0px;
     z-index: 1;
     right: 30px;
-    border: mediumvioletred;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent red transparent transparent;
 }
 
+/*ensures correct positioning of right containers and icons, also that they are layered on top.*/
 .right::before{
     content: "";
     height: 0;
@@ -103,15 +115,15 @@ p{
     width: 0px;
     z-index: 1;
     left: 30px;
-    border: mediumvioletred;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent red transparent transparent;
 }
 
+/*sends right icon to the right to make sure its centred on the timeline (bug fix)*/
 .right::after{
     left: -20.5px;
 }
 
+
+/*establishes background color for the containers so it matches with the text background*/
 .content{
     padding:20px 30px;
     background-color: #ab504f;
@@ -119,6 +131,7 @@ p{
     border-radius: 6px;
 }
 
+/* rounds off the edges of images in the container*/
 .content-image{
     border-radius: 4px;
     margin-bottom: 15px;
@@ -126,6 +139,8 @@ p{
     position: relative;
 }
 
+
+/*resizes the image in the containers*/
 .content-image img{
     max-width: 100%;
     height: auto;
@@ -140,13 +155,25 @@ p{
     right: 0;
 }
 
-
+/*image hover animation zoom*/
 .content-image:hover img{
     transform: scale(1.1);
 }
 
+/*puts the button in the center*/
+.button{
+    text-align: center;  
+}
+/*sets the button settings and makes the background the same as site background so it covers the remaining timeline*/
+.border-box{
+    font-size: xx-large;
+    color: #a52422;
+    background-color: #EFF2C0;
+    position: relative;
+    z-index: 5;
+}
 
-
+/*makes the site responsive*/
 @media screen and (max-width: 600px){
     .timeline::after{
         left:31px;
